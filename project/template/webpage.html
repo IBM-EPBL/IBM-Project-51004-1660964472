@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://cdn.hswstatic.com/gif/water-update.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+/* styling the header */
+
+.row2 h1 {
+    position: absolute;
+    left: 30vw;
+    color:blue;
+    top: 30px;
+}
+
+main div.column input {
+    display: block;
+    position: relative;
+    margin: 24px 26px;
+    left: 30vw;
+    border-radius: 35px;
+    width: 250px;
+    height: 30px;
+}
+
+input[type="text"] {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main div.last input {
+    width: 256px;;
+    background: rgb(5, 3, 68);
+    background: linear-gradient(90deg, rgba(5, 3, 68, 1) 0%, rgba(0, 12, 36, 1) 0%, rgba(39, 9, 121, 1) 0%, rgba(38, 8, 114, 1) 0%, rgba(94, 0, 255, 1) 45%, rgba(188, 0, 255, 1) 84%);
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main div.last input:hover {
+    background: rgb(188, 0, 255);
+    background: linear-gradient(90deg, rgba(188, 0, 255, 1) 23%, rgba(94, 0, 255, 1) 63%, rgba(22, 9, 121, 1) 100%, rgba(5, 3, 68, 1) 100%, rgba(0, 12, 36, 1) 100%, rgba(38, 8, 114, 1) 100%);
+}
+
+.bor {
+    text-align: center;
+    margin:50px;
+    margin-left: 60vw;
+    color: black;
+    font-size: 21px;
+    border: 2px solid rgb(251, 253, 255);
+    width: 358px;
+    padding-left: 4px;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <div class="row2">
+                    <h1>Water Quality Prediction</h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="column">
+		<div class="bor">
+                    {{showcase}}
+                </div>
+            <form action="/login" method="post">
+                <label for=""></label>
+                <input type="text" name="station" id="" placeholder="Enter Station">
+                <label for=""></label>
+                <input type="text" name="do" id="" placeholder="Enter D.O">
+                <label for=""></label>
+                <input type="text" name="ph" id="" placeholder="Enter PH">
+                <label for=""></label>
+                <input type="text" name="co" id="" placeholder="Enter Conductivity">
+                <label for=""></label>
+                <input type="text" name="bod" id="" placeholder="Enter B.O.D">
+                <label for=""></label>
+                <input type="text" name="na" id="" placeholder="Enter Nitratenen">
+                <label for=""></label>
+                <input type="text" name="tc" id="" placeholder="Enter Total Coliform">
+                <label for=""></label>
+                <div class="last">
+                    <input type="submit" value="Predict">
+                </div>
+            </form>
+        </div>
+    </main>
+    </div>
+</body>
+
+</html>
